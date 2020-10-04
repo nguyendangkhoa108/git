@@ -1,0 +1,304 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+    vertical-align: baseline;
+    text-decoration: none;
+}
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+    list-style: none;
+    
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+    border-spacing: 0;
+}
+.genkheader{
+    display: block;
+    position: relative;
+}
+.genktop{
+    background: #2e2e2e;
+    height: 25px;
+    position: relative;
+    z-index: 0;
+}
+.genk{
+
+    width: 1040px;
+    margin: 0 auto;
+}
+ /* @media screen and (max-width: 1430px){ 
+.genk 
+{ 
+    width: 900px !important; 
+    padding: 0 5px; 
+   
+} 
+} */
+
+.genkmenu1 a:hover{
+    color: #fff;
+}
+.genkmenu1 a {
+     float: left;
+    margin-right: 22px;
+    font-family: SFD-Medium;
+    font-size: 12px;
+    line-height: 25px;
+    display: block;
+    color: #aaa;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+ .bottom
+ { 
+      background: #222;  
+     height: 45px; 
+    position: relative; 
+    width: 100%;
+    z-index: 99999;
+    top: 0px;
+
+ } 
+
+   .container1 .item {
+    float: left;
+    height: 45px;
+    line-height: 50px;
+    margin-left: 30px;
+    text-transform: uppercase;
+   }
+       
+
+  /* .container li{ 
+    text-transform: uppercase;
+    float: left;
+     line-height: 50px;
+     margin-left: 30px;
+
+}   */
+
+ .item{
+     color: #fff;
+     font-size: 15px;
+     font-family: 'Oswald', sans-serif;;
+     
+ }
+ a.item:hover{
+     color:#ed2e2e;
+ }
+  .icon .icon1{
+    width: 20px;
+    height: 2px;
+    position: absolute;
+    transform-origin: center center;
+    top: 22px;
+    background: #fff;  
+    transition: transform .3s, background .3s,-webkit-transform .3s;
+    z-index: 2;
+
+}
+
+  .icon.them{
+    width: 30px;
+    height: 45px;
+    display: block;
+    position: relative;
+    padding: 0 5px;
+  }
+
+.icon .icon1::before, .icon .icon1::after
+{
+     
+     position: absolute;
+    background: #fff;
+    height: 2px;
+    width: 20px;
+    content: '';
+
+}
+.icon .icon1::before{
+    top:-6px;
+}
+.icon .icon1::after{
+    bottom: -6px;
+}
+.icon .icon2{
+    background: transparent;
+    width: 20px;
+    height: 2px;
+    display: block;
+    position: absolute;
+    transform-origin: center center;
+    top:22px;
+    background: #fff;  
+    transition: transform .3s, background .3s,-webkit-transform .3s;
+
+}
+ .icon .icon2::before , .icon .icon2::after 
+ {
+     content: ''; 
+     height: 2px;
+    width: 20px;
+    position: absolute;
+ } 
+ .icon .icon2::before
+{
+    transform: translateY(6px) rotate(-45deg);
+    top: -6px;
+}
+.icon .icon2::after
+{
+    transform: translateY(-6px) rotate(45deg);
+    bottom: -6px;
+} 
+
+.icon:hover .icon1, .icon:hover  .icon1::before, .icon:hover .icon1::after, .icon .icon2::before, .icon .icon2::after{
+    background: #ed2e2e;
+}
+.menusum{
+    position: absolute;
+    top: 45px;
+    left: 0;
+    background: #f1f1f1;
+    height: 190px;
+    z-index: 9999;
+  width: 100%;
+}
+.menu1{
+    background: #f1f1f1;
+    position: relative;
+    box-shadow: 0 11px 84px 0 rgba(0,0,0,.35);
+    padding-top: 35px;
+    padding-bottom: 25px;
+
+}
+@media screen and ( max-width: 1000px)
+ { .SUM
+{
+    width: 1050px !important ;
+    padding: 0 ;
+ }
+}
+.menu2{
+    display: block;
+    margin: 0 auto;
+}
+.menu3{
+    position: relative;
+    display: flex;
+    justify-content: center;
+}
+.menu1::before, .menu1::after{
+    content: "\20";
+    display: block;
+    height: 0;
+    overflow: hidden;
+}
+.item1:first-of-type{
+   margin-left: 15px;
+}
+.item1{
+    width: 150px;
+    margin-left: 20px;
+    color: #000;
+    float: left;
+}
+
+.item2 .item3{
+    border-bottom: 1px solid #acacac;
+    margin-bottom: 24px;
+    position: relative;
+}
+.item2 .item3::before{
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQcDiVVnKFzO2MxOuQGfqRLLeP4YM8dVUlWiw&usqp=CAU) ;
+    content: '';
+    width: 9px;
+    height: 12px;
+    background-size: cover;
+}
+.item2 .item3 a{
+    padding-bottom: 10px;
+    font-size: 18px;
+ font-family: 'Oswald', sans-serif;
+    color: #333;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+.item2 .item4 a {
+   font-family: 'Oswald', sans-serif;
+    font-size: 16px;
+    color: #555;
+    padding-bottom: 15px;
+    display: block;
+    text-decoration: none;
+    
+}
+.app-ios, .app-android
+{
+   
+    width: 150px;
+    height: 50px;
+    display: block;
+    margin-top: 25px;
+    
+
+}
+.app-android{
+    background: url(https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSH7b6tqT6e9z6q1iI7AP0i3R_iHqjeuBGssA&usqp=CAU) 0 0 no-repeat;
+    background-size: cover;
+}
+.app-ios{
+    background: url(https://www.imro.ie/wp-content/uploads/2017/09/app-store-image.png) 0 0 no-repeat;
+    background-size: cover;
+}
+
+
+
+  
+
+
+
+
+ 
+  
+ 
+
+
+
+
+
+     
